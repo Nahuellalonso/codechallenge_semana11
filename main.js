@@ -22,12 +22,10 @@ function enviarFormulario() {
     .then(response => response.json())
     .then(data => {
         console.log('Respuesta del servidor:', data);
-        // Aquí puedes manejar la respuesta del servidor como desees
-        alert('Registro exitoso. Respuesta del servidor: ' + JSON.stringify(data));
+        alert('Registro exitoso.');
     })
     .catch(error => {
         console.error('Error al enviar la solicitud:', error);
-        // Aquí puedes manejar los errores de la solicitud
         alert('Error al enviar la solicitud. Verifica la consola para más detalles.');
     });
 }
